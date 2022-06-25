@@ -113,6 +113,7 @@ body {
 */
 .btn {
   height: 37px;
+  width: 110px;
   cursor: pointer;
   background-color: $Pink;
   border: 1px solid $Pink;
@@ -288,7 +289,20 @@ big
 
 
 */
-@media screen and (max-width:999px) {
+@media screen and (max-width:992px) {
+  .section__info {
+    padding: 1rem;
+    height: auto;
+  }
+  .footer {
+    padding: 1rem;
+  }
+  .grupos {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width:768px) {
+
   .img__desktop {
     display: none;
   }
@@ -362,17 +376,19 @@ big
     font-size: 3.5rem;
   }
   .section {
+    width: 100%;
+    padding: 10px;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
+    margin: auto auto 10rem auto;
   }
   .bg__section {
     position: relative;
     width: 100%;
-    padding: 5rem;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -384,6 +400,7 @@ big
   .section__info {
     padding: 0;
     width: 100%;
+    margin-bottom: 3rem;
   }
 .text {
   font-size: 1rem;
@@ -402,7 +419,7 @@ big
     height: 400px;
   }
   .section__Community {
-    height: 500px;
+    height: 200px;
     justify-content: center;
   }
   .footer {
@@ -410,6 +427,21 @@ big
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+  .form {
+    text-align: center;
+    width: 90%;
+  }
+  .footer__text {
+    width: auto;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  .txt {
+    margin-bottom: 2rem;
   }
   .grupos {
     display: flex;
@@ -418,6 +450,23 @@ big
     align-items: center;
     margin: auto;
     margin-bottom: 3rem;
+  }
+  .footer__info {
+    text-align: center;
+      width: 90%;
+  }
+  .footer__logo {
+    margin: auto auto 1rem auto;
+  }
+  .footer__links {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+  .link {
+    margin: auto 1rem;
   }
 
 }
